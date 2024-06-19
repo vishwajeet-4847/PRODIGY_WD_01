@@ -1,0 +1,335 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* global styles */
+a{
+    text-decoration: none ;
+    color: white;
+}
+li{
+    display:inline-block;
+}
+img{
+    width:100%;
+    
+}
+.app{
+    background-color: #000;
+    color: #fff;
+}
+
+/* utilities class */
+.section-center{
+    width:90%;
+    margin: auto;
+}
+
+
+/* font class */
+.title{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+.title span{
+    color: rgb(255, 255, 0);
+}
+
+
+
+
+/* logo */
+.logo{
+    display: inline-block;
+    color: #fff;
+}
+
+/* hero img */
+
+.hero_img{
+   max-width: 300px;
+   width: 50%;
+   margin:auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+
+   
+}
+
+.hero_title span{
+    color:rgb(253, 253, 34);
+}
+/* nav bar main header */
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ nav{
+    display :none;
+    background-color: #000;
+   
+    transition: position 0.4s;
+    
+}
+.menu-button>div{
+    width: 1.5rem;
+    height: 0.2rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    margin: 4px 0.2px;
+}
+
+/* hero content */
+.hero_section{
+    display: flex;
+    margin-top: 3rem;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.subtitle{
+    font-size: medium;
+}
+.hero_title{
+    font-size: larger;
+}
+.hero_text{
+    font-size: smaller;
+}
+/* mobile nav bar */
+ .active{
+    display: block;
+    width:100%;
+    padding: 2rem 1rem;
+    text-align: right;
+    position: fixed;
+   top:10%;
+   right: 0;
+   z-index: 99;
+   
+}
+.active li{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.active li:hover , .active li a:hover{
+    
+    padding: 0.5rem 1.3rem;
+    color:rgb(253, 253, 34);
+   
+}
+
+.active li a{
+    color: #fff;
+    font-size: 1.5rem;
+    transition: padding 0.1s;
+    
+}
+
+
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    transition: position 0.4s;
+    box-shadow: 1px 1px 1px 1px rgb(31, 31, 31);
+}
+
+
+/* call to action button */
+
+.hero_button_box{
+    width:80%;
+    margin:  2rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.hero_button_box .btn{
+    
+    border-radius: 1rem;
+    background-color: rgb(230, 208, 36);
+    color: #4144d4;
+    font-size: 0.7rem;
+    padding: 0.7rem 0.7rem;
+    font-weight: bolder;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-left: 0.5rem;
+    
+}
+.hero_button_box .btn:hover{
+    background-color:#4144d4; 
+    color: rgb(230, 208, 36);
+}
+/* footer */
+footer{
+    border-top: 2px solid rgb(22, 22, 22);
+    margin-top: 2rem;
+}
+
+.foot-img{
+    width:60px
+}
+
+.footer-content{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot-company-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-nav ul li{
+    margin: 0.3rem;
+
+}
+
+.footer-nav ul li:hover,.footer-nav ul li a:hover{
+   transform: scale(1.02);
+   color: yellow;
+   
+
+}
+.footer-section{
+    margin:0.8rem;
+}
+input{
+    all:unset;
+    background-color: #1a1919e6;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+
+  .footer-email input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .footer-email input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+  }
+  .footer-email input[type="submit"]:hover {
+    background-color: #e65c00;
+  }
+
+  /* skills */
+  .skills{
+    background-color: #000000;
+    margin-bottom: 20px;
+  }
+  .skills h2{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+    
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+ .skill-item {
+    background-color: #201f1f;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-container{
+    max-width: 6rem;
+  }
+
+  /* large screen */
+
+   @media screen and (min-width:600px) {
+    .menu-button{
+        display: none;
+
+    }
+    nav{
+        display: inline-block;
+        font-size: medium;
+    }
+    nav li {
+        margin:0  1rem ;
+    }
+    nav li a:hover ,nav li:hover{
+      color: yellow;
+      transform: scale(1.03);
+    }
+    .hero_section{
+        flex-wrap: nowrap;
+    }
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        gap: 0.3rem;
+    }
+    .footer-section ul{
+        flex-direction: column;
+        display:flex ;
+        align-items: center;
+    }
+    .footer-bottom{
+        grid-column:1/-1;
+    }
+   }
