@@ -30,12 +30,23 @@ document.getElementById('subscribeForm').addEventListener('submit', function(eve
 
 
   
+  let contactIcons = document.querySelector(".contact-icons");
   window.onscroll = function() {scrollFunction()};
-
   function scrollFunction() {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
       document.querySelector(".main-header").classList.add('fixed');
     } else {
       document.querySelector(".main-header").classList.remove('fixed');
+    }
+
+
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+      
+      contactIcons.classList.add("popup");
+      
+    }
+    else{
+     
+      contactIcons.classList.remove("popup");
     }
   }
